@@ -36,5 +36,29 @@ namespace WFNovo
         {
 
         }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+
+
+            cliente.Nome = txtNome.Text;
+            cliente.Endereco = txtEndereco.Text;
+            cliente.Bairro = txtBairro.Text;
+            cliente.Estado = cbxEstado.Text;
+            cliente.Telefone = txtTelefone.Text;
+            cliente.Celular = txtCelular.Text;
+            cliente.Email = txtEmail.Text;
+
+            FrmVerCadastro frmCadastro = new FrmVerCadastro(cliente);
+            frmCadastro.ShowDialog();
+
+
+        }
+
+        private void FrmCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -209,6 +209,7 @@
             btnVer.TabIndex = 17;
             btnVer.Text = "Ver Contatos";
             btnVer.UseVisualStyleBackColor = true;
+            btnVer.Click += btnVer_Click;
             // 
             // FrmCadastro
             // 
@@ -235,6 +236,7 @@
             Controls.Add(lblTop);
             Name = "FrmCadastro";
             Text = "Cadastro de Cliente";
+            Load += FrmCadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
